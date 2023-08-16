@@ -1,0 +1,25 @@
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /manage-todos             --> todoGin/service.(*Handler).TodolistHandlerGetAll-fm (4 handlers)
+[GIN-debug] GET    /access                   --> todoGin/service.(*Handler).Access-fm (4 handlers)
+[GIN-debug] POST   /manage-todo              --> todoGin/service.(*Handler).TodolistHandlerCreate-fm (4 handlers)
+[GIN-debug] GET    /manage-todo/todo/:id     --> todoGin/service.(*Handler).TodolistHandlerGetByID-fm (4 handlers)
+[GIN-debug] PUT    /manage-todo/todo/:id     --> todoGin/service.(*Handler).TodolistHandlerUpdate-fm (4 handlers)
+[GIN-debug] DELETE /manage-todo/todo/:id     --> todoGin/service.(*Handler).TodolistHandlerDelete-fm (4 handlers)
+[GIN-debug] POST   /uploadS3/:id             --> todoGin/service.(*Handler).UploadTodoFileS3AtchHandler-fm (4 handlers)
+[GIN-debug] POST   /uploadLocal/:id          --> todoGin/service.(*Handler).UploadTodoLocalAtchHandler-fm (4 handlers)
+[GIN-debug] GET    /list-Search              --> todoGin/service.(*Handler).TodolistsSearchHandler-fm (4 handlers)
+[GIN-debug] POST   /uploadBuckets            --> todoGin/service.(*Handler).UploadFileS3BucketsHandler-fm (3 handlers)
+[GIN-debug] POST   /register                 --> todoGin/service.(*Handler).Register-fm (3 handlers)
+[GIN-debug] POST   /login                    --> todoGin/service.(*Handler).Login-fm (3 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8080
+::1 - [14 Aug 23 14:18 WIB] GET /manage-todo/todo/2 400 218.227µs 
+::1 - [14 Aug 23 14:18 WIB] GET /manage-todos 400 81.402µs 
+::1 - [14 Aug 23 14:18 WIB] POST /login 401 2.451992ms 
+::1 - [14 Aug 23 14:18 WIB] POST /register 200 191.277194ms 
+::1 - [14 Aug 23 14:18 WIB] POST /login 200 169.015596ms 
+::1 - [14 Aug 23 14:18 WIB] GET /manage-todos 200 1.21769ms 
